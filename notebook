@@ -1,1 +1,14 @@
-为什么‘\n’会有两个空行
+为什么‘\n’会有两个空行？
+        System.out.println("6666 = " + 6666);
+        System.out.println('\n');
+        System.out.println(666);
+        // 输出结果：
+        6666 = 6666
+
+
+        666
+
+println 会切换新的一行， print 会认为还是同一行
+第一个空行是因为System.out.println("6666 = " + 6666); 中println换行
+第二个空行是因为System.out.println('\n'); 中的\n换行
+666出现在第三行是因为System.out.println('\n'); 中的println换行
